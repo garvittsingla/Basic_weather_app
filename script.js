@@ -10,7 +10,11 @@ async function getData(cityName){
     const promise = await fetch(`http://api.weatherapi.com/v1/current.json?key=8547ac94c827467597275355240509&q=${cityName}&aqi=no`);
     return await promise.json()
 }  
-
+gsap.to("#city-name",{
+    y:30,
+    duration:3,
+    delay:3
+})
 
 
 
